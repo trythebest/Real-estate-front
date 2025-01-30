@@ -111,7 +111,7 @@ export default function Search() {
     urlParams.set('sort', sidebardata.sort);
     urlParams.set('order', sidebardata.order);
     const searchQuery = urlParams.toString();
-    navigate(`https://real-estate-bck.onrender.com/search?${searchQuery}`);
+    navigate(`/search?${searchQuery}`);
   };
 
   const onShowMoreClick = async () => {
@@ -224,7 +224,7 @@ export default function Search() {
               <option value='createdAt_asc'>Oldest</option>
             </select>
           </div>
-          <button className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95'>
+          <button  className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95'>
             Search
           </button>
         </form>
